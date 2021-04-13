@@ -16,7 +16,7 @@ pipeline {
          stage('test') {
             steps {
                 echo 'Hello test'
-                sleep 5
+                sleep5
             }
         }
          stage('deploy') {
@@ -47,5 +47,4 @@ post {
             echo "The job is unstable "
         }
     } 
-
 }
