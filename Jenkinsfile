@@ -16,7 +16,7 @@ pipeline {
          stage('test') {
             steps {
                 echo 'Hello test'
-                sleep5
+                sleep 5
             }
         }
          stage('deploy') {
@@ -28,7 +28,7 @@ pipeline {
          stage('push') {
             steps {
                 echo 'Hello push'
-                sh 'docker ps'
+                sh 'dockerps'
             }
         }
     }
